@@ -46,7 +46,7 @@ class TaskListViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        showAlert(with: "Edit Task", and: "Please, change your task!")
+        showAlert(with: "Edit Task", and: "Please, change your task.")
     }
     
     private func setupNavigationBar() {
