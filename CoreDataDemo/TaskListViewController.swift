@@ -10,7 +10,7 @@ import CoreData
 
 class TaskListViewController: UITableViewController {
     
-    private let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+    private let context = StorageManager.storageManager.persistentContainer.viewContext
     
     private let cellID = "cell"
     private var taskList: [Task] = []
@@ -22,7 +22,33 @@ class TaskListViewController: UITableViewController {
         setupNavigationBar()
         fetchData()
     }
+ 
+    override func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
 
+        let deleteAction = UIContextualAction(style: .normal, title: "Delete") {
+            (action, view, completion) in
+            
+            let deleteObject = self.taskList.remove(at: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: .automatic)
+            self.context.delete(deleteObject)
+            completion(true)
+            
+            do {
+                try self.context.save()
+            } catch let error {
+                print(error.localizedDescription)
+            }
+        }
+        deleteAction.backgroundColor = .systemBlue
+        let configuration = UISwipeActionsConfiguration(actions: [deleteAction])
+        configuration.performsFirstActionWithFullSwipe = true
+        return configuration
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        showAlert(with: "Edit Task", and: "Please, change your task!")
+    }
+    
     private func setupNavigationBar() {
         title = "Task List"
         navigationController?.navigationBar.prefersLargeTitles = true
