@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 53;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,7 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		A8AF2C7E25F933B000735B15 /* CoreDataDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8AF2C7E25F933B000735B15 /* TaskList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaskList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8AF2C8125F933B000735B15 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A8AF2C8525F933B000735B15 /* TaskListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListViewController.swift; sourceTree = "<group>"; };
 		A8AF2C8B25F933B000735B15 /* CoreDataDemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataDemo.xcdatamodel; sourceTree = "<group>"; };
@@ -42,7 +42,7 @@
 		A8AF2C7525F933B000735B15 = {
 			isa = PBXGroup;
 			children = (
-				A8AF2C8025F933B000735B15 /* CoreDataDemo */,
+				A8AF2C8025F933B000735B15 /* TaskList */,
 				A8AF2C7F25F933B000735B15 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,12 +50,12 @@
 		A8AF2C7F25F933B000735B15 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A8AF2C7E25F933B000735B15 /* CoreDataDemo.app */,
+				A8AF2C7E25F933B000735B15 /* TaskList.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A8AF2C8025F933B000735B15 /* CoreDataDemo */ = {
+		A8AF2C8025F933B000735B15 /* TaskList */ = {
 			isa = PBXGroup;
 			children = (
 				A8AF2C8125F933B000735B15 /* AppDelegate.swift */,
@@ -67,15 +67,15 @@
 				A8AF2C9225F933B300735B15 /* Info.plist */,
 				A8AF2C8A25F933B000735B15 /* CoreDataDemo.xcdatamodeld */,
 			);
-			path = CoreDataDemo;
+			path = TaskList;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A8AF2C7D25F933B000735B15 /* CoreDataDemo */ = {
+		A8AF2C7D25F933B000735B15 /* TaskList */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A8AF2C9525F933B300735B15 /* Build configuration list for PBXNativeTarget "CoreDataDemo" */;
+			buildConfigurationList = A8AF2C9525F933B300735B15 /* Build configuration list for PBXNativeTarget "TaskList" */;
 			buildPhases = (
 				A8AF2C7A25F933B000735B15 /* Sources */,
 				A8AF2C7B25F933B000735B15 /* Frameworks */,
@@ -85,9 +85,9 @@
 			);
 			dependencies = (
 			);
-			name = CoreDataDemo;
+			name = TaskList;
 			productName = CoreDataDemo;
-			productReference = A8AF2C7E25F933B000735B15 /* CoreDataDemo.app */;
+			productReference = A8AF2C7E25F933B000735B15 /* TaskList.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -96,15 +96,16 @@
 		A8AF2C7625F933B000735B15 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1240;
-				LastUpgradeCheck = 1240;
+				LastUpgradeCheck = 1430;
 				TargetAttributes = {
 					A8AF2C7D25F933B000735B15 = {
 						CreatedOnToolsVersion = 12.4;
 					};
 				};
 			};
-			buildConfigurationList = A8AF2C7925F933B000735B15 /* Build configuration list for PBXProject "CoreDataDemo" */;
+			buildConfigurationList = A8AF2C7925F933B000735B15 /* Build configuration list for PBXProject "TaskList" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -117,7 +118,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A8AF2C7D25F933B000735B15 /* CoreDataDemo */,
+				A8AF2C7D25F933B000735B15 /* TaskList */,
 			);
 		};
 /* End PBXProject section */
@@ -284,7 +285,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GBTTU32HS2;
-				INFOPLIST_FILE = CoreDataDemo/Info.plist;
+				INFOPLIST_FILE = TaskList/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -303,7 +304,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GBTTU32HS2;
-				INFOPLIST_FILE = CoreDataDemo/Info.plist;
+				INFOPLIST_FILE = TaskList/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -318,7 +319,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A8AF2C7925F933B000735B15 /* Build configuration list for PBXProject "CoreDataDemo" */ = {
+		A8AF2C7925F933B000735B15 /* Build configuration list for PBXProject "TaskList" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A8AF2C9325F933B300735B15 /* Debug */,
@@ -327,7 +328,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A8AF2C9525F933B300735B15 /* Build configuration list for PBXNativeTarget "CoreDataDemo" */ = {
+		A8AF2C9525F933B300735B15 /* Build configuration list for PBXNativeTarget "TaskList" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A8AF2C9625F933B300735B15 /* Debug */,

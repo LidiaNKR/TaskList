@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:">
+      location = "self:/Users/lidialadanuk/Desktop/Projects/CoreDataDemo/TaskList.xcodeproj">
    </FileRef>
 </Workspace>
